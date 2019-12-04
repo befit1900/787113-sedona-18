@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Седона</title>
+	</head>
+	<body>
+		<header class="page-header">			
+			<nav class="main-nav">
+			<button class="main-nav__toggle" type="button">Открыть меню</button> 
+				<div class="main-nav__wrapper">
+				<ul class="page-header__list site-list">	
+					<li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
+					<li class="site-list__item"><a href="#">Фото и видео</a></li>
+					<li class="site-list__item"><a href="catalog.html">Форма отзыва</a></li>
+					<li class="site-list__item"	><a href="#">Html academy</a></li>
+				</ul>
+				</div>
+			</nav>
+			<section>
+				<a class="page-header__logo" href="index.html"><img src="#" width="102" height="83" alt="Логотип города Седона"></a>
+				<img src="#" width="320" height="389" alt="Вид на город jpg">
+				<img src="#" width="320" height="389" alt="Надпись Welcome png">
+			</section>
+		</header>
+		<main class="page-main">
+			<h1 class="page-main__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h1>
+			<!-- Секция с преимуществами -->
+			<img src="#" width="260" height="320" alt="photo city 1">
+			<section class="page-main__features features">
+				<h2 class="page-main__features--title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+				<ul class="page-main__features--list features-list">		
+					<!--Первая причина-->
+					<li class="features-list--item first-reason">
+						<h3 class="first-reason__title">Настоящий городок</h3>
+						<span>— №1 —</span>
+						<p>Седона не аттракцион для туристов, там течет своя жизнь.</p>
+						<ul class="first-reason__list">
+							<li class="first-reason__list--item item-housing">
+								<img class="item-housing--img" src="img/#" width="37" height="36" alt="housing_png">
+								<h4>Жилье</h4>
+								<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+							</li>
+							<li class="first-reason__list--item item-souvenir">
+								<img src="img/#" width="32" height="38" alt="souvenir_png">
+								<h4>Сувениры</h4>
+								<p>Не только китайского, но и местного производства!</p>
+							</li>
+							<li class="first-reason__list--item item-food">
+								<img src="img/#" width="40" height="35" alt="food_png">
+								<h4>Еда</h4>
+								<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+							</li>
+						</ul>
+					</li>
+					<!-- Вторая причина -мост -->
+					<li class="features-list--item">
+						<h3>Там есть мост дьявола</h3>
+						<span>— №2 —</span>
+						<p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+						<img src="img/#" width="320" height="260" alt="bridge_jpg"> 
+					</li>	
+					<!-- Третья причина - небольшая площадь -->
+					<li class="features-list--item">
+						<h3>Небольшая площадь</h3>
+						<span>—№3—</span>
+						<p>Все интересные места находятся очень близко</p> 
+					</li>
+					<!-- Четвертая причина - дорога -->
+					<li class="features-list--item">
+						<h3>Красивая дорога</h3>
+						<span>—№4—</span>
+						<p>Ехать в седону из Лас-Вагаса совсем не скучно!</p> 
+					</li>	
+					<!-- Пятая причина - мало туристов -->
+					<li class="features-list--item">
+						<h3>Мало туристов</h3>
+						<span>—№5—</span>
+						<p>Большинство едет в гранд каньон и толпится там</p> 
+					</li>
+				</ul>
+			</section>
+			<section class="interested">  
+				<h2 class="interested--header">Заинтересовались?</h2>
+				<p class="interested--date">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+				<button type="button" class="interested--button">Найти гостиницу</button>
+				<a href="map.html" class="map">map.html</a>
+			</section>
+		</main>
+		<footer class="page-footer">
+			<p class="hashtag">#Visitsedona</p>
+			<ul class="social__list">
+				<li class="social__list--item"><a href="#"><img src="img/slide1.png" width="698" height="413" alt="Twitter_img">Twitter</a></li>
+				<li class="social__list--item"><a href="#"><img src="img/slide1.png" width="698" height="413" alt="Facebook_img">Facebook</a></li>
+				<li class="social__list--item"><a href="#"><img src="img/slide1.png" width="698" height="413" alt="Youtube_img">Youtube</a></li>
+			</ul>
+			<p class="page-footer__copyright copyright">Разработано:<a class="copyright__link" href="https://htmlacademy.ru"><img class="copyright__link--img"src="img/#" width="27" height="34" alt="HTML Academy_png"></a>
+			</p>
+		</footer>
+	</body>
 </html>
