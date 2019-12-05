@@ -9,107 +9,117 @@
 			<nav class="main-nav">
 				<button class="main-nav__toggle" type="button">Открыть меню</button> 
 				<div class="main-nav__wrapper">
-					<ul class="page-header__list site-list">	
-						<li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
-						<li class="site-list__item"><a href="#">Фото и видео</a></li>
-						<li class="site-list__item"><a href="catalog.html">Форма отзыва</a></li>
-						<li class="site-list__item"	><a href="#">Html academy</a></li>
+					<ul class="page-header__list">
+						<li><a  class="page-header__list page-header__list--link" href="index.html">Главная</a></li>
+						<li><a  class="page-header__list page-header__list--link">Фото и видео</a></li>
+						<li><a  class="page-header__list page-header__list--link" href="form.html">Форма отзыва</a></li>
+						<li><a  class="page-header__list page-header__list--link">Html academy</a></li>
 					</ul>
 				</div>
 			</nav>
 			<section>
-				<a class="page-header__logo" href="index.html"><img src="#" width="102" height="83" alt="Логотип города Седона"></a>
+				<a class="page-header__logo"><img src="#" width="102" height="83" alt="Логотип города Седона"></a>
 				<img src="#" width="320" height="389" alt="Вид на город jpg">
 				<img src="#" width="320" height="389" alt="Надпись Welcome png">
 			</section>
 		</header>
 		<main class="page-main">
 			<section class="page-main__feedback feedback">
-				<h1 class="feedback__header"> Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</h1>
+				<h1 class="feedback__title"> Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</h1>
 				<form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
-					<fieldset class="form__full-name">
-						<p>
+					<div class="form__full-name full-name">
+						<fieldset>
 							<legend>Представьтесь:</legend>
-							<label for="guest-first-name">Имя</label>
-							<input id="guest-first-name" type="text" name="guest-first-name" value="" placeholder="Петр">
-						</p>
-						<p>
-							<label for="guest-last-name">Фамилия</label>
-							<input id="guest-last-name" type="text" name="guest-last-name" value="" placeholder="Иванов">
-						</p>
-						<p>
-							<label for="guest-middle-name">Отчество</label>
-							<input id="guest-middle-name" type="text" name="name" value="" placeholder="Александрович">
-						</p>
-					</fieldset>
-					<fieldset  class="form__contact-inf">
-						<legend>Контактная информация:</legend>
-						<p>
-							<label for="appointment-phone">Контактный телефон:</label>
-							<input id="appointment-phone" type="tel" name="phone" value="" placeholder="Введите телефон">
-						</p>
-						<p>
-							<label for="appointment-phone">Электронная почта:</label>
-							<input id="appointment-phone" type="tel" name="phone" value="" placeholder="Введите e-mail">
-						</p>
-					</fieldset>
-					<fieldset class="form__impress">
-						<legend>Ваше общее впечатление:</legend>
-						<ul>
-							<li>
-								<input type="radio" name="impress-group" value="pisitive-impress" id="filter-pisitive-impress" checked>
-								<label for="filter-positive-impress">Скорее положительное
-								</label>
-							</li>
-							<li>
-								<input type="radio" name="impress-group" value="negative-impress" id="filter-negative-impress">
-								<label for="filter-negative-impress">Скорее отрицательное
-								</label>
-							</li>
-							<li>
-								<input type="radio" name="impress-group" value="indifferent-impress" id="filter-indifferent-impress">
-								<label for="filter-indifferent-impress">Затрудняюсь ответить
-								</label>
-							</li>
-						</ul>
-					</fieldset>
-					<fieldset class="form__attract">
-						<legend>Посещенные достопримечательности:</legend>
-						<ul>
-							<li>
-								<input type="checkbox" name="bridge" id="filter-bridge" checked>
-								<label for="filter-bridge">Мост Дьявола</label>
-							</li>
-							<li>
-								<input type="checkbox" name="bell-mountain" id="filter-bell-mountain" checked>
-								<label for="filter-bell-mountain">Гора-колокол</label>
-							</li>
-							<li>
-								<input type="checkbox" name="slide-park" id="filter-slide-park" checked>
-								<label for="filter-slide-park">Слайд-парк</label>
-							</li>
-							<li>
-								<input type="checkbox" name="red-rocks" id="filter-red-rocks">
-								<label for="filter-red-rocks">Красные скалы</label>
-							</li>
-						</ul>
-					</fieldset>
-					<fieldset class="form__emotion">
-						<legend>Опишите свои эмоции</legend>
-						<input type="text" id="emotion"  name="emotion" placeholder="Опишите подробно все свои восторги">
-					</fieldset>
+							<p>
+								<label for="guest-first-name">Имя<sup>*</sup>:</label>
+								<input id="guest-first-name" type="text" name="guest-first-name" value="" placeholder="Петр">
+							</p>
+							<p>
+								<label for="guest-last-name">Фамилия<sup>*</sup>:</label>
+								<input id="guest-last-name" type="text" name="guest-last-name" value="" placeholder="Иванов">
+							</p>
+							<p>
+								<label for="guest-middle-name">Отчество<sup>*</sup>:</label>
+								<input id="guest-middle-name" type="text" name="name" value="" placeholder="Александрович">
+							</p>
+						</fieldset>
+					</div>
+					<div>
+						<fieldset  class="form__contact">
+							<legend>Контактная информация:</legend>
+							<p>
+								<label for="appointment-phone">Контактный телефон:</label>
+								<input id="appointment-phone" type="tel" name="phone" value="" placeholder="Введите телефон">
+							</p>
+							<p>
+								<label for="appointment-phone">Электронная почта:</label>
+								<input id="appointment-phone" type="tel" name="phone" value="" placeholder="Введите e-mail">
+							</p>
+						</fieldset>
+					</div>
+					<div class="form__impress">
+						<fieldset>
+							<legend>Ваше общее впечатление:</legend>
+							<ul>
+								<li>
+									<input type="radio" name="impress-group" value="pisitive-impress" id="filter-pisitive-impress" checked>
+									<label for="filter-positive-impress">Скорее положительное
+									</label>
+								</li>
+								<li>
+									<input type="radio" name="impress-group" value="negative-impress" id="filter-negative-impress">
+									<label for="filter-negative-impress">Скорее отрицательное
+									</label>
+								</li>
+								<li>
+									<input type="radio" name="impress-group" value="indifferent-impress" id="filter-indifferent-impress">
+									<label for="filter-indifferent-impress">Затрудняюсь ответить
+									</label>
+								</li>
+							</ul>
+						</fieldset>
+					</div>
+					<div class="form__attract">
+						<fieldset>
+							<legend>Посещенные достопримечательности:</legend>
+							<ul>
+								<li>
+									<input type="checkbox" name="bridge" id="filter-bridge" checked>
+									<label for="filter-bridge">Мост Дьявола</label>
+								</li>
+								<li>
+									<input type="checkbox" name="bell-mountain" id="filter-bell-mountain" checked>
+									<label for="filter-bell-mountain">Гора-колокол</label>
+								</li>
+								<li>
+									<input type="checkbox" name="slide-park" id="filter-slide-park" checked>
+									<label for="filter-slide-park">Слайд-парк</label>
+								</li>
+								<li>
+									<input type="checkbox" name="red-rocks" id="filter-red-rocks">
+									<label for="filter-red-rocks">Красные скалы</label>
+								</li>
+							</ul>
+						</fieldset>
+					</div>
+					<div class="form__emotion">
+						<fieldset>
+							<legend>Опишите свои эмоции</legend>
+							<input type="text" id="emotion"  name="emotion" placeholder="Опишите подробно все свои восторги">
+						</fieldset>
+						<button class="form__button" type="button">Отправить отзыв</button>
+					</div>
 				</form>
-				<button class="form__button" type="button">Отправить отзыв</button>
 			</section>
 		</main>
 		<footer class="page-footer">
 			<p class="hashtag">#Visitsedona</p>
-			<ul class="social__list">
-				<li class="social__list--item"><a href="#"><img src="img/slide1.png" width="698" height="413" alt="Twitter_img">Twitter</a></li>
-				<li class="social__list--item"><a href="#"><img src="img/slide1.png" width="698" height="413" alt="Facebook_img">Facebook</a></li>
-				<li class="social__list--item"><a href="#"><img src="img/slide1.png" width="698" height="413" alt="Youtube_img">Youtube</a></li>
+			<ul class="social-list">
+				<li><a class="social-list__item"><img src="img/slide1.png" width="698" height="413" alt="Twitter_img">Twitter</a></li>
+				<li><a class="social-list__item"><img src="img/slide1.png" width="698" height="413" alt="Facebook_img">Facebook</a></li>
+				<li><a class="social-list__item"><img src="img/slide1.png" width="698" height="413" alt="Youtube_img">Youtube</a></li>
 			</ul>
-			<p class="page-footer__copyright copyright">Разработано:<a class="copyright__link" href="https://htmlacademy.ru"><img class="copyright__link--img"src="img/#" width="27" height="34" alt="HTML Academy_png"></a>
+			<p class="copyright">Разработано:<a class="copyright-link" href="https://htmlacademy.ru"><img class="copyright-link__img"src="img/#" width="27" height="34" alt="HTML Academy_png"></a>
 			</p>
 		</footer>
 	</body>
